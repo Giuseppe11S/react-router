@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './layouts/Layout'
 import HomePage from './pages/HomePage'
 import AboutUs from './pages/AboutUs'
+import ProductPage from './pages/ProductPage'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/product" element={<ProductPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

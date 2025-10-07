@@ -6,6 +6,7 @@ import {Link, NavLink } from "react-router-dom";
 const navlinks = [
   {path: '/', label: 'Home'},
   {path: '/about', label: 'About'},
+  {path: '/product', label: 'Product'}
 ];
 
 export default function Navbar  () {
