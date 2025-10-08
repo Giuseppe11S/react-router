@@ -11,7 +11,7 @@ const navlinks = [
 
 export default function Navbar  () {
   return (
-    <nav>
+    <nav className="cnt-navbar">
       <ul>
       {navlinks.map(link => (
       <li key={link.path}>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useState, useEffect} from 'react'
 
 // import libreria routing
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -8,6 +8,7 @@ import Layout from './layouts/Layout'
 import HomePage from './pages/HomePage'
 import AboutUs from './pages/AboutUs'
 import ProductPage from './pages/ProductPage'
+import ProductDetailPage from './pages/ProductDetailPage'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/product" element={<ProductPage />} />
+          <Route path="/product/:id" element={<ProductDetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
